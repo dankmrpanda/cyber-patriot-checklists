@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# set source and destination directories
+src="/path/to/source/directory"
+dst="/path/to/destination/directory"
+
+# media file types to copy
+types=(mp4 mkv avi wmv mpeg mpg mov flv)
+
+# copy all media files
+for type in "${types[@]}"; do
+  find "$src" -name "*.$type" -exec cp {} "$dst" \;
+done
