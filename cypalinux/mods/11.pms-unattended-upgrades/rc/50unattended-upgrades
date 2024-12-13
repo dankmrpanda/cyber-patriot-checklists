@@ -1,0 +1,6 @@
+Unattended-Upgrade::Allowed-Origins {
+    "origin=*";
+};
+
+Unattended-Upgrade::Package-Blacklist {
+};
